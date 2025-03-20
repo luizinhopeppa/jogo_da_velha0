@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #ad2121;
+    min-height:100vh;
+    color: white;
+  }
+  .jogo {
+    text-align: center;
+  }
+  .tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin-top: 20px;
+  }
+  .celula {
+    width: 100px;
+    height: 100px;
+    background-color: #830808;
+    border: 2px solid #ffffff;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .celula:hover {
+    background-color: #7e0606;
+  }
+  .celula.vencedor {
+    background-color: #4ad64a;
+  }
